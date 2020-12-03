@@ -24,12 +24,15 @@ public class SeleniumTestCase {
         HomePage homePage = new HomePage(driver);
         Thread.sleep(3000);
 
+        // Find and click link Chapter1
         homePage.goToChapter1();
         Thread.sleep(3000);
 
         ChapterPage chapter1Page = new ChapterPage(driver);
+        // Assert texts
         Assert.assertEquals(chapter1Page.getText(), text);
 
+        // Find and click link Homepage
         chapter1Page.goToHomePage();
         Thread.sleep(3000);
 
