@@ -13,5 +13,6 @@ public class HomePage {
 
     public void goToChapter1(){
         webDriver.findElement(chapter1).click();
+        System.out.println("Clicked Chapter 1");
     }
 }

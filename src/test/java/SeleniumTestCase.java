@@ -12,12 +12,12 @@ public class SeleniumTestCase {
 
     @BeforeTest
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
     @Test
-    public void test() throws InterruptedException {
+    public void testWebPage() throws InterruptedException {
 
         driver.get("http://book.theautomatedtester.co.uk/");
 

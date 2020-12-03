@@ -12,11 +12,13 @@ public class ChapterPage {
     }
 
     public String getText(){
+        System.out.println("Element Found with text(): " + webDriver.findElement(text).getText());
         return webDriver.findElement(text).getText();
     }
 
     public void goToHomePage(){
         webDriver.findElement(homePage).click();
+        System.out.println("Clicked Home Page");
     }
 
 }
