@@ -1,10 +1,10 @@
+package services;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import services.ChapterPage;
-import services.HomePage;
 
 public class SeleniumTestCase {
 

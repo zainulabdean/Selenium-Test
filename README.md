@@ -21,5 +21,5 @@ Instruction to download chrome driver are mentioned in this link
 3- Running the Tests. 
 
 option 1: run command " mvn clean test" at the root directory of this project -----
-option 2 : or run the SeleniumTestCase file.
+option 2 : or run the services.SeleniumTestCase file.
 
