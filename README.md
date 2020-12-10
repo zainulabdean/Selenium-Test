@@ -3,7 +3,6 @@
 
 # Demo 
 
-![Demo](https://user-images.githubusercontent.com/11889001/101020891-f6604880-3590-11eb-8cca-b4fc2967711e.gif)
 
 
 
