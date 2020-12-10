@@ -12,4 +12,8 @@ public class HomePage {
         System.out.println("Clicked Chapter 1");
         return Selenide.page(ChapterPage.class);
     }
+
+    public Boolean verifyHomePage() {
+        return $(By.linkText("Chapter1")).exists();
+    }
 }
