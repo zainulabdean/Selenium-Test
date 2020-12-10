@@ -15,7 +15,6 @@
    update the maven dependency
 
 3- Running the Tests. 
-
-option 1: run command " mvn clean test" at the root directory of this project -----
-option 2 : or run the SeleniumTestCase file.
+      * Run command " mvn clean test" at the root directory of this project -----
+      * Or run the SeleniumTestCase file.
 
