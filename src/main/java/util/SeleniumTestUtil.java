@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class SeleniumTestUtil {
 
-    private static String APPLICATION_PROPERTY = "application.test.properties";
+    private static final String APPLICATION_PROPERTY = "application.test.properties";
 
     public static Properties loadFile() throws IOException {
 

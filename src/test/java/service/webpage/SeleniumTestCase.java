@@ -12,7 +12,7 @@ import java.util.Properties;
 public class SeleniumTestCase {
 
     Properties properties = null;
-    private String textToAssert = "Assert that this text is on the page";
+    private final String textToAssert = "Assert that this text is on the page";
 
     @BeforeTest
     public void setUp() throws IOException {
