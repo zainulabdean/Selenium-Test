@@ -6,11 +6,11 @@ import java.util.Properties;
 
 public class SeleniumTestUtil {
 
-    public static Properties loadFile() throws IOException {
-        Properties properties = null;
-        final String APPLICATION_PROPERTY = "application.test.properties";
+    private static String APPLICATION_PROPERTY = "application.test.properties";
 
-        properties = new Properties();
+    public static Properties loadFile() throws IOException {
+
+        Properties properties = new Properties();
         properties.load(new FileInputStream(SeleniumTestUtil.class.getClassLoader()
                 .getResource(APPLICATION_PROPERTY).getFile()));
         return properties;

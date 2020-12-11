@@ -9,13 +9,10 @@ import util.SeleniumTestUtil;
 import java.io.IOException;
 import java.util.Properties;
 
-import static com.codeborne.selenide.Selenide.open;
-
 public class SeleniumTestCase {
 
     Properties properties = null;
-    String textToAssert = "Assert that this text is on the page";
-    private final String WEB_URL = "webpage.home.url";
+    private String textToAssert = "Assert that this text is on the page";
 
     @BeforeTest
     public void setUp() throws IOException {
@@ -26,7 +23,8 @@ public class SeleniumTestCase {
     public void testWebPage() {
 
       // Open the home page
-      HomePage homePage = open(properties.getProperty(WEB_URL), HomePage.class);
+      HomePage homePage = new HomePage();
+      homePage.openHomePage();
 
       // Find and click link Chapter1
       ChapterPage chapter1Page = homePage.goToChapter1();
